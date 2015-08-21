@@ -10,18 +10,27 @@ namespace Lab1_2
     {
         static void Main(string[] args)
         {
-            bool flag = true;
+            input();
 
+
+        }
+        static void input()
+        {
             // input
             int[] input = { 4, 5, 2, 8, 9, 1, 2, 4, 3, 1 };
+            process(input);
 
+        }
+        static void process(int[] input)
+        {
+            bool flag = true;
             // process
             while (flag)
             {
                 flag = false;
                 for (int i = 0; i != input.Length - 1; i++)
                 {
-                    if (input[i] > input[i + 1])
+                    if (input[i] < input[i + 1])
                     {
                         int temp = input[i];
                         input[i] = input[i + 1];
@@ -30,7 +39,11 @@ namespace Lab1_2
                     }
                 }
             }
+            output(input);
 
+        }
+        static void output(int[] input)
+        {
             // output
             for (int i = 0; i != input.Length; i++)
             {
@@ -38,6 +51,7 @@ namespace Lab1_2
                 Console.Write(" ");
             }
             Console.ReadKey();
+
         }
     }
 }
