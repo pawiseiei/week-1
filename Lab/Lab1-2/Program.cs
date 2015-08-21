@@ -43,6 +43,7 @@ namespace Lab1_2
                         flag = true;
                     }
                 }
+ 
             }
             output(input);
 
