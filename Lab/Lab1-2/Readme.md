@@ -13,4 +13,4 @@
 
 Answer:Can input only 10 numbers.
 
-************CAN'T SEND***************
+************CAN'T SEND*************
